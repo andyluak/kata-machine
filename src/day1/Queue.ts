@@ -35,3 +35,14 @@ export default class Queue<T> {
         return this.head?.value;
     }
 }
+
+const queue = new Queue<{ id: number }>();
+
+queue.enqueue({ id: 2 });
+queue.enqueue({ id: 3 });
+queue.enqueue({ id: 4 });
+
+queue.deque()
+queue.deque()
+
+console.log(queue);
